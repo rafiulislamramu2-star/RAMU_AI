@@ -1,1 +1,102 @@
-style.css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f7fa;
+    color:#222;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+    background:#081322;
+    color:#00bfff;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-shadow:0 0 10px #00bfff;
+}
+
+.menu-btn{
+    font-size:32px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    right:-280px;
+    width:280px;
+    height:100%;
+    background:#101827;
+    transition:.4s;
+    padding-top:70px;
+    z-index:1000;
+}
+
+.sidebar.active{
+    right:0;
+}
+
+.sidebar a{
+    display:block;
+    padding:18px 25px;
+    color:white;
+    text-decoration:none;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    font-size:20px;
+}
+
+.sidebar a:hover{
+    background:#1d4ed8;
+}
+
+main{
+    padding:20px;
+}
+
+.card{
+    background:#101827;
+    color:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    text-align:center;
+}
+
+.card h2{
+    color:#29b6f6;
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+#clock{
+    font-size:42px;
+    font-weight:bold;
+}
+
+#weatherText{
+    font-size:28px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#081322;
+    color:white;
+}
